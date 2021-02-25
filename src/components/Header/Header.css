@@ -2,8 +2,25 @@
 margin: 10px;
 }
 
+.user-img-name{
+    text-align: center;
+}
+.user-profile-img{
+    border-radius: 50px;
+
+}
+img.responsive {  
+    width:80px;
+    border-radius: 50px;
+}
+
+.logout{
+    display: flex;
+    justify-content: flex-end;
+}
 a{
     text-decoration: none;
+    font-weight: bold;
 }
 a:link{
     color: white;
@@ -17,3 +34,16 @@ a:hover{
 a:active{
     color: yellow;
 }
+
+@media screen and (min-width: 450px) {
+    nav{
+    font-size: 1.5em;
+    }
+    img.responsive { 
+         width:150px;
+         border-radius: 80px;
+        }
+    
+   
+    }
+    img.responsive { height: auto; }

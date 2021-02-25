@@ -14,16 +14,27 @@ class Header extends Component {
 
   renderLogoutLink() {
     return (
-      <div>
+      <div >
+
+          <nav>
+            <div className='user-img-name'>
+         <Link to='/'>
+
         <span>
+       
+        <img src= {`https://picsum.photos/seed/${this.context.user.name}/400`} className="responsive" alt="user-profile" />
+        <br />
           {this.context.user.name}
         </span>
-        <nav>
+          </Link>
+      </div>
+          <div className='logout'>
           <Link
             onClick={this.handleLogoutClick}
             to='/login'>
             Logout
           </Link>
+</div>
         </nav>
       </div>
     )

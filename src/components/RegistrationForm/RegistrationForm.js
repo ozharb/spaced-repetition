@@ -72,7 +72,7 @@ class RegistrationForm extends Component {
         </div>
         <div className="registration-label-input">
           <Label htmlFor='registration-password-input'>
-            Choose a password: <Required />
+            Choose a password:<Required />
           </Label>
           <br/>
           <Input
