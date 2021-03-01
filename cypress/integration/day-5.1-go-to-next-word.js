@@ -22,7 +22,7 @@ describe(`User story: Go to next word`, function() {
         method: 'POST',
         url: `/api/language/guess`,
         status: 200,
-        response: 'fixture:language-guess-generic.json',
+        response: 'fixture:language-head.json',
       })
       .as('postListGuess')
 
@@ -34,7 +34,7 @@ describe(`User story: Go to next word`, function() {
   it(`displays another word after clicking the 'next' button`, () => {
     cy.get('main button').click()
 
-    cy.fixture('language-guess-generic.json')
+    cy.fixture('language-head.json')
       .then(languageHeadFixture => {
         cy.get('main').within($main => {
           cy.get('p').eq(0)

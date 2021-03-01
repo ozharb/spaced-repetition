@@ -136,13 +136,13 @@ describe(`User story: Answer feedback`, function() {
         cy.fixture('language-guess-correct.json')
           .then(fx => fixtures.push(fx)),
       ]).then(() => {
-        const [languageHeadFixture, incorrectFixture] = fixtures
+        const [languageHeadFixture, correctFixture] = fixtures
 
         cy.get('main').within($main => {
           cy.get('.DisplayScore p')
             .should(
               'have.text',
-              `Your total score is: ${incorrectFixture.totalScore}`,
+              `Your total score is: ${correctFixture.totalScore}`,
             )
           cy.get('h2')
             .should(
@@ -152,7 +152,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('.DisplayFeedback p')
             .should(
               'have.text',
-              `The correct translation for ${languageHeadFixture.nextWord} was ${incorrectFixture.answer} and you chose ${guess}!`,
+              `The correct translation for ${languageHeadFixture.nextWord} was ${correctFixture.answer} and you chose ${guess}!`,
             )
           cy.get('button')
             .should(

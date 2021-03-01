@@ -1,7 +1,23 @@
-.LearningRoute{
-    /* padding-bottom: 100px; */
+.feedback-answer{
+    font-size: 20px;
+    color: yellow;
 }
-.guess-btn{
+.following-word{
+    color: white;
+}
+.next-btn{
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.next-btn{
     background-color: transparent;
     border-color: white;
     border-style: solid;
@@ -12,42 +28,14 @@
     font-size: 15px;
     margin-right: 20px;
 }
-.guess-btn:disabled{
-    background-color: transparent;
-    border-color: lightgray;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 2px;
-    padding: 5px;
-    color: lightgrey;
-    font-size: 15px;
-    margin-right: 20px;
-}
-.guess-btn:hover:disabled{
-    cursor: pointer;
-     border-color: lightgrey;
-     color: lightgray;
-    
-
-   } 
-.guess-btn:focus:disabled{
-      border-color:lightgray;
-      color: lightgray;
-   } 
-.guess-btn:hover{
+.next-btn:hover{
     cursor: pointer;
      border-color: yellow;
      color: yellow;
     
 
    } 
-.guess-btn:focus{
+.next-btn:focus{
       border-color:yellow;
       color: yellow;
    } 
-
-.next-word{
-    color:white;
-    font-size: 2em;
-    font-weight: bold;
-}

@@ -30,7 +30,6 @@ class DashboardRoute extends Component {
 
   render() {
 
-    console.log(this.state.language.name)
     const { language = {}, words = [] } = this.state
     return (
       <section className = "dashboard">

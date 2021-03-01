@@ -1,6 +1,10 @@
 .nav-login > a{
 margin: 10px;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+}
 
 .user-img-name{
     text-align: center;
@@ -15,8 +19,10 @@ img.responsive {
 }
 
 .logout{
+    font-size: 18px;
     display: flex;
     justify-content: flex-end;
+    margin: 20px;
 }
 a{
     text-decoration: none;
@@ -43,7 +49,5 @@ a:active{
          width:150px;
          border-radius: 80px;
         }
-    
-   
     }
     img.responsive { height: auto; }

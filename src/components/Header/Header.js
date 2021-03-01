@@ -15,26 +15,15 @@ class Header extends Component {
   renderLogoutLink() {
     return (
       <div >
-
-          <nav>
-            <div className='user-img-name'>
-         <Link to='/'>
-
-        <span>
-       
-        <img src= {`https://picsum.photos/seed/${this.context.user.name}/400`} className="responsive" alt="user-profile" />
-        <br />
-          {this.context.user.name}
-        </span>
-          </Link>
-      </div>
+        <nav>
           <div className='logout'>
-          <Link
-            onClick={this.handleLogoutClick}
-            to='/login'>
-            Logout
+            <Link
+              onClick={this.handleLogoutClick}
+              to='/login'>
+              Logout
           </Link>
-</div>
+          </div>
+
         </nav>
       </div>
     )
@@ -42,7 +31,7 @@ class Header extends Component {
 
   renderLoginLink() {
     return (
-      <nav className= 'nav-login'>
+      <nav className='nav-login'>
         <Link to='/login'>Login</Link>
         {' '}
         <Link to='/register'>Sign up</Link>
@@ -52,22 +41,35 @@ class Header extends Component {
 
   render() {
     return (
+      <>
       <header >
         <Link to='/'>
           <h1 className='logo'>
-
             <i className="fas fa-meteor">
               <FontAwesomeIcon className='logo' icon='meteor' />
             </i>
-
             Spaced repetition
-
         </h1>
+
         </Link>
+
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
+
+
       </header>
+
+        <div className='user-img-name'>
+          <Link to='/'>
+            <span>
+              <img src={`https://picsum.photos/seed/${this.context.user.name}/400`} className="responsive" alt="user-profile" />
+              <br />
+              {this.context.user.name}
+            </span>
+          </Link>
+        </div>
+        </>
     );
   }
 }
