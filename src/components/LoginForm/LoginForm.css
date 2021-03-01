@@ -2,6 +2,9 @@
  margin-bottom: 20px;  
  color: white;
 }
+fieldset {
+    border: 0;
+}
 .login-input-label > input{
     background-color: transparent;
     border: none;

@@ -32,9 +32,12 @@ class Header extends Component {
   renderLoginLink() {
     return (
       <nav className='nav-login'>
+        <div className='login'>
         <Link to='/login'>Login</Link>
-        {' '}
+        </div>
+        <div className='sign-up'>
         <Link to='/register'>Sign up</Link>
+        </div>
       </nav>
     )
   }
@@ -59,16 +62,24 @@ class Header extends Component {
 
 
       </header>
-
+    
+           
         <div className='user-img-name'>
           <Link to='/'>
             <span>
+            {TokenService.hasAuthToken()
+          ? 
               <img src={`https://picsum.photos/seed/${this.context.user.name}/400`} className="responsive" alt="user-profile" />
+          :
+              <i className="fas fa-user-astronaut">
+        <FontAwesomeIcon className='responsive' icon='user-astronaut' />
+      </i>}
               <br />
               {this.context.user.name}
             </span>
           </Link>
         </div>
+  
         </>
     );
   }

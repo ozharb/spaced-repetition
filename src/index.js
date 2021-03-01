@@ -9,12 +9,13 @@ import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faBone, faMeteor } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faBone, faMeteor, faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab,
   faCheckSquare,
   faBone,
-  faMeteor
+  faMeteor,
+  faUserAstronaut
   )
   
 ReactDOM.render(

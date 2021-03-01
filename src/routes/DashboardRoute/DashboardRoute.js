@@ -10,7 +10,7 @@ class DashboardRoute extends Component {
   }
   componentDidMount() {
 
-    fetch(`${config.API_ENDPOINT}/language`, {
+    fetch(`${config.REACT_APP_API_BASE}/language`, {
       headers: { 'authorization': `bearer ${TokenService.getAuthToken()}`, }
     })
       .then((langRes) => {

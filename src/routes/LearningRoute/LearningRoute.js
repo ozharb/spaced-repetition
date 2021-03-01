@@ -26,7 +26,7 @@ validateGuess = () => {
 
   componentDidMount() {
 
-    fetch(`${config.API_ENDPOINT}/language/head`, {
+    fetch(`${config.REACT_APP_API_BASE}/language/head`, {
       headers: { 'authorization': `bearer ${TokenService.getAuthToken()}`, }
     })
       .then((langRes) => {
@@ -51,8 +51,7 @@ validateGuess = () => {
 
       guess: this.state.guess.value
     }
-    console.log(newGuess)
-    fetch(`${config.API_ENDPOINT}/language/guess`,
+    fetch(`${config.REACT_APP_API_BASE}/language/guess`,
         {
             method: 'POST',
             headers: {
