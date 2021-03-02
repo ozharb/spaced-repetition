@@ -17,7 +17,7 @@ class RegistrationRoute extends Component {
     return (
       <section  className= 'registration-route'>
         <p>
-          Practice learning a language with the spaced reptition revision technique.
+          Practice learning French with the spaced repetition learning technique.
         </p>
         <fieldset>
         <legend><h2>Sign up</h2></legend>
