@@ -1,5 +1,5 @@
 # Spaced Repetition Capstone
-- Lanaguage learning app that uses the spaced repetition learning technique to help you memorize a foreign language. The app displays 10 words in French, and asks you to recall the corresponding word in English.
+Language learning app that uses the spaced repetition learning technique to help you memorize a foreign language. The app displays 10 words in French, and asks you to recall the corresponding word in English.
 
 ## User Stories:
 - User can register an account with their name, user name, and custom password
@@ -18,6 +18,12 @@
 * HTML5
 * CSS3 (from scratch - no frameworks)
 * Cypress
+
+#### Back End
+
+* Deployed via Heroku. 
+* Repo can be found at https://git.heroku.com/oz-spaced-repetition-api.git
+
 
 #### Production
 

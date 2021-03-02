@@ -10,8 +10,6 @@ class FeedbackRoute extends Component {
 
   }
 
-
-
   componentDidMount() {
 
     fetch(`${config.REACT_APP_API_BASE}/language/head`, {
