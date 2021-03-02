@@ -4,9 +4,9 @@ Language learning app that uses the spaced repetition learning technique to help
 ## User Stories:
 - User can register an account with their name, user name, and custom password
 - User can login with their credentials
-- Upon login, user sees their dashboard with their words to practice along with total score, and indiviaual scores for each word
-- User can start practicing where they left off
-- User gets feedback after guess that includes whether they were right or wrong, new total score, the next word to practice.
+- Upon login, user sees their dashboard with their words to practice along with their total score and indiviaual scores for each word
+- User can start practicing at the top of the list or where they left off since their last session.
+- User gets feedback after each guess that includes whether they were right or wrong, their new total score, and info about the next word to practice.
 
 ## Technology
 
