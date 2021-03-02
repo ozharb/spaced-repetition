@@ -28,15 +28,14 @@ class Header extends Component {
       </div>
     )
   }
-
   renderLoginLink() {
     return (
       <nav className='nav-login'>
         <div className='login'>
-        <Link to='/login'>Login</Link>
+          <Link to='/login'>Login</Link>
         </div>
         <div className='sign-up'>
-        <Link to='/register'>Sign up</Link>
+          <Link to='/register'>Sign up</Link>
         </div>
       </nav>
     )
@@ -45,42 +44,37 @@ class Header extends Component {
   render() {
     return (
       <>
-      <header >
-        <Link to='/'>
-          <h1 className='logo'>
-            <i className="fas fa-meteor">
-              <FontAwesomeIcon className='logo' icon='meteor' />
-            </i>
+        <header >
+          <div className='logo-logout'>
+            <Link to='/'>
+              <h1 className='logo'>
+                <i className="fas fa-meteor">
+                  <FontAwesomeIcon className='logo' icon='meteor' />
+                </i>
             Spaced repetition
         </h1>
-
-        </Link>
-
-        {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
-
-
-      </header>
-    
-           
-        <div className='user-img-name'>
-          <Link to='/'>
-            <span>
+            </Link>
             {TokenService.hasAuthToken()
-          ? 
-              <img src={`https://picsum.photos/seed/${this.context.user.name}/400`} className="responsive" alt="user-profile" />
-          :
-              <i className="fas fa-user-astronaut">
-        <FontAwesomeIcon className='responsive' icon='user-astronaut' />
-      </i>}
-              <br />
-              {this.context.user.name}
-            </span>
-          </Link>
-        </div>
-  
-        </>
+              ? this.renderLogoutLink()
+              : this.renderLoginLink()}
+          </div>
+          <div className='user-img-name'>
+            <Link to='/'>
+              <span>
+                {TokenService.hasAuthToken()
+                  ?
+                  <img src={`https://picsum.photos/seed/${this.context.user.name}/400`} className="responsive" alt="user-profile" />
+                  :
+                  <i className="fas fa-user-astronaut">
+                    <FontAwesomeIcon className='responsive' icon='user-astronaut' />
+                  </i>}
+                <br />
+                {this.context.user.name}
+              </span>
+            </Link>
+          </div>
+        </header>
+      </>
     );
   }
 }
