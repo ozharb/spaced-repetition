@@ -1,6 +1,10 @@
 # Spaced Repetition Capstone
 Language learning app that uses the spaced repetition learning technique to help you memorize a foreign language. The app displays 10 words in French, and asks you to recall the corresponding word in English.
 
+- Demo login:
+  - username: Demo
+  - password: Demo@2021
+  
 ## User Stories:
 - User can register an account with their name, user name, and custom password
 - User can login with their credentials
